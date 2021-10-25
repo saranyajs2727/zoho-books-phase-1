@@ -492,7 +492,7 @@ export default function AddItem() {
                   </button>
                 </Link>
                 <div  className="goback">
-                <Link href="/Items">
+                <Link href="/items">
                   
                 <button
                   id="ember1447"

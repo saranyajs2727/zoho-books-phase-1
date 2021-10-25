@@ -1,13 +1,23 @@
+import AddIcon from "@mui/icons-material/Add";
+import DehazeIcon from "@mui/icons-material/Dehaze";
 import EmojiObjectsTwoToneIcon from "@mui/icons-material/EmojiObjectsTwoTone";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import * as React from "react";
-import Customers from "../services/Customers";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import Link from "next/link";
+import Image from "next/dist/client/image";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import "bootstrap/dist/css/bootstrap.css";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+// import Items from "../services/Customers";
 
+import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
+import * as React from "react";
+import ReactPlayer from "react-player";
 export default function Estimates() {
   const customHandleClick = async (e) => {
     e.preventDefault();
+    // const data = new FormData(event.currentTarget);
     let data = {
       primary: e.target.elements.primary.value,
       first_name: e.target.elements.first_name.value,
@@ -19,8 +29,8 @@ export default function Estimates() {
       mobile: e.target.elements.mobile.value,
     };
     console.log(data);
-    let res = await Customers.addCustomers(data);
-    console.log(res);
+    // let res = await Items.addCustomers(data);
+    // console.log(res);
   };
   return (
     <div>
@@ -205,6 +215,9 @@ export default function Estimates() {
                             style={{ marginLeft: "20px" }}
                           />
                         </div>
+
+                        {/* <input autocomplete="off" spellcheck="false" placeholder="" autocorrect="off" autocapitalize="off" id="ember560" className="ember-text-field form-control ac-search-txt ember-view" type="text"
+     />  */}
                       </div>
                     </div>
                   </div>
@@ -304,18 +317,24 @@ export default function Estimates() {
                 className="btn btn-primary ember-view"
                 type="submit"
               >
+                {/* 
+            <Link href="/addItem">
+              <a onClick={customHandleClick}>Save </a>
+            </Link> */}
                 Save
               </button>
               <Link href="/customer">
                 <button
                   id="ember1447"
                   className="btn btn-primary ember-view"
-                  type="submit"
-                  style={{ marginLeft: "10px" }}
+                  type="submit" style={{marginLeft:"10px"}}
                 >
-                  <a>Go back </a>
+               
+                    <a >Go back </a>
+                  
+                  
                 </button>
-              </Link>
+                </Link>
             </form>
           </div>
         </div>

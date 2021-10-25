@@ -641,7 +641,7 @@ export default function Form(props) {
                               <div id="ember1855" className="ember-view">
                                 <div className="ac-box ">
                                   <span
-                                    class="ac-selected form-control "
+                                    className="ac-selected form-control "
                                     tabIndex="0"
                                   >
                                     <span className="text-muted">

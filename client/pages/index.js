@@ -1,11 +1,10 @@
-import AddItem from "../components/AddItem";
-import Header from "../components/Header";
-import Home from "../components/Home";
+import React from "react";
+import Login from "../components/Login";
 
-export default function MainComponent() {
+export default function login() {
   return (
-    <div style={{ display: "flex" }}>
-      <Home />
-    </div>
+    <>
+      <Login />
+    </>
   );
 }

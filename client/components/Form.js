@@ -3,6 +3,7 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import {
   Button,
+  Link,
   FormControl,
   Grid,
   Input,
@@ -736,13 +737,34 @@ export default function Form(props) {
           </div>{" "}
           <div className="txn-creation-column">
             <div className="btn-toolbar fixed-actions">
-              <button
-                className="btn btn-secondary"
-                data-ember-action=""
-                data-ember-action-1448="1448"
-              >
-                Save as Draft
-              </button>
+              {props.title === "New Estimate" ? (
+                <Button
+                  variant="contained"
+                  color="success"
+                  component={Link}
+                  href="/estimate"
+                >
+                  Go back
+                </Button>
+              ) : props.title === "New Sales Order" ? (
+                <Button
+                  variant="contained"
+                  color="success"
+                  component={Link}
+                  href="/sales"
+                >
+                  Go back
+                </Button>
+              ) : (
+                <Button
+                  variant="contained"
+                  color="success"
+                  component={Link}
+                  href="/invoices"
+                >
+                  Go back
+                </Button>
+              )}
               <button
                 id="ember1447"
                 className="btn btn-primary ember-view"

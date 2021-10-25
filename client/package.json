@@ -19,6 +19,7 @@
         "@mui/material": "^5.0.3",
         "@mui/x-data-grid": "^4.0.1",
         "@react-pdf-viewer/core": "^2.4.1",
+        "animate.css": "^4.1.1",
         "apexcharts": "^3.29.0",
         "axios": "^0.23.0",
         "bootstrap": "^5.1.3",

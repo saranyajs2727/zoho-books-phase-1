@@ -1,10 +1,12 @@
 import React from "react";
-import Login from "../components/Login";
+import Footers from "../components/Footers";
+import Landingpage from "../components/Landingpage";
 
-export default function login() {
+export default function Home() {
   return (
-    <>
-      <Login />
-    </>
+    <div>
+      <Landingpage />
+      <Footers />
+    </div>
   );
 }

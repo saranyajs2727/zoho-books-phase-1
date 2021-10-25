@@ -28,7 +28,7 @@ export default function PdfViewer() {
                 />
                 <label
                   className="form-check-label"
-                  forHtml="a0b046fa1"
+                  forhtml="a0b046fa1"
                   style={{ margin: "10px 0px 0px 10px" }}
                 >
                   {" "}

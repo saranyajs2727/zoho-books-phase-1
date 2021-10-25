@@ -5,14 +5,16 @@ import {
     TableContainer,
     TableHead,
     TableRow,
-    Toolbar,
+    Toolbar, 
+    Button,
+    Link,
   } from "@mui/material";
   import { Box } from "@mui/system";
   import AddIcon from "@mui/icons-material/Add";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import EmojiObjectsTwoToneIcon from "@mui/icons-material/EmojiObjectsTwoTone";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import Link from "next/link";
+
 
   import * as React from "react";
   
@@ -22,7 +24,7 @@ import Link from "next/link";
     return (
       <div>
         <div className="navba">
-          <button
+          {/* <button
             className="btn btn-primary newicon"
             data-ember-action=""
             data-ember-action-2061="2061"
@@ -34,7 +36,15 @@ import Link from "next/link";
             <Link href="/addSales">
               <a style={{textDecoration:'none',color:'white'}}>New </a>
             </Link>{" "}
-          </button>
+          </button> */}
+          <Button
+        variant="contained"
+        color="success"
+        component={Link}
+        href="/addestimate"
+      >
+        &#xFF0B;&nbsp;New
+      </Button>
           <SettingsOutlinedIcon style={{ marginLeft: "20px" }} />
           <DehazeIcon
             sx={{

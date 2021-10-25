@@ -297,7 +297,7 @@ export default function Estimates() {
                     data-ember-action-573="573"
                     style={{ textDecoration: "none", marginLeft: "12px" }}
                   >
-                    Add more details
+                    Add more details.
                   </a>
                 </div>
               </div>
